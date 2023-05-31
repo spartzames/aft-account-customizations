@@ -13,7 +13,7 @@ variable "ct_home_region" {
 }
 
 #Create a budget for S3 with a limit of 50 GB of storage.
-resource "aws_budgets_budget" "s3" {
+resource "aws_budgets_budget" "dev1-budget-1-s3" {
   name         = "budget-s3-usage-gb"
   budget_type  = "USAGE"
   limit_amount = "50"
@@ -50,7 +50,7 @@ resource "aws_budgets_budget" "ec2" {
 }
 
 #Create a budget for s3 with a limit of 3 GB of storage.
-resource "aws_budgets_budget" "s3" {
+resource "aws_budgets_budget" "dev2-budget2-s3" {
   name         = "budget-s3-usage-gb"
   budget_type  = "USAGE"
   limit_amount = "10"
